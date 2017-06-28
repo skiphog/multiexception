@@ -26,9 +26,6 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
         return $this;
     }
 
-    /**
-     * @return bool
-     */
     public function isEmpty(): bool
     {
         return empty($this->data);
@@ -46,19 +43,11 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
         }, $this->data);
     }
 
-    /**
-     * Implementation of Iterator interface
-     * @return \ArrayIterator
-     */
     public function getIterator(): \ArrayIterator
     {
         return new \ArrayIterator($this->data);
     }
 
-    /**
-     * Implementing the Countable interface
-     * @return int
-     */
     public function count(): int
     {
         return count($this->data);
