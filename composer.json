@@ -1,0 +1,21 @@
+{
+  "name": "skiphog/multiexception",
+  "description": "Small Collection of useful PHP functions",
+  "keywords": ["multiexception", "exception"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Skopin Alexey",
+      "email": "skiphog@mail.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Skiphog\\": "src/"
+    }
+  }
+}
