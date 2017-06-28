@@ -9,17 +9,17 @@ namespace Skiphog;
 class MultiException extends \Exception implements \IteratorAggregate, \Countable
 {
     /**
-     * Коллекция исключений
+     * Collection of exceptions
      * @var array $data
      */
     protected $data = [];
 
     /**
-     * Добавить искючение в коллекцию
-     * @param \Throwable $e
+     * Add an exception to the collection
+     * @param \Exception $e
      * @return $this
      */
-    public function add(\Throwable $e)
+    public function add(\Exception $e)
     {
         $this->data[] = $e;
 
@@ -35,7 +35,7 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
     }
 
     /**
-     * Получить все сообщения в виде массива
+     * Get all messages as an array
      * @return array
      */
     public function toArray(): array
@@ -47,7 +47,7 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
     }
 
     /**
-     * Реализация Iterator
+     * Implementation of Iterator interface
      * @return \ArrayIterator
      */
     public function getIterator(): \ArrayIterator
@@ -56,7 +56,7 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
     }
 
     /**
-     * Реализация интерфейса Countable
+     * Implementing the Countable interface
      * @return int
      */
     public function count(): int
