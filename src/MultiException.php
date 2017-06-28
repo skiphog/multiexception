@@ -32,7 +32,7 @@ class MultiException extends \Exception implements \IteratorAggregate, \Countabl
     }
 
     /**
-     * Get all messages as an array
+     * Get all messages as array
      * @return array
      */
     public function toArray(): array
