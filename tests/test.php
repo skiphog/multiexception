@@ -9,10 +9,11 @@ assert($multi instanceof \Exception);
 assert($multi instanceof \Traversable);
 assert($multi instanceof \Countable);
 
-$result = $multi->add(new Exception('Error #1'));
-$multi->add(new Exception('Error #2'));
+$result = $multi->add(new Exception('Exception #1'));
+$multi->add(new Exception('Exception #2'));
 
 assert($result instanceof MultiException);
+assert($multi->getIterator() instanceof ArrayIterator);
 assert(2 === count($multi));
 assert(false === $multi->isEmpty());
 assert(is_array($multi->toArray()));
