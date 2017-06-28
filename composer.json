@@ -1,6 +1,6 @@
 {
   "name": "skiphog/multiexception",
-  "description": "Small Collection of useful PHP functions",
+  "description": "MultiExcepton library",
   "keywords": ["multiexception", "exception"],
   "license": "MIT",
   "authors": [
