@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1504818897">
-  <project timestamp="1504818897">
+<coverage generated="1504819166">
+  <project timestamp="1504819166">
     <package name="Skiphog">
       <file name="C:\OSPanel\domains\multiexception\src/MultiException.php">
         <class name="MultiException" namespace="Skiphog" fullPackage="Skiphog" package="Skiphog">

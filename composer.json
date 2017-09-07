@@ -1,6 +1,6 @@
 {
   "name": "skiphog/multiexception",
-  "description": "MultiExcepton library",
+  "description": "MultiException library",
   "keywords": [
     "multiexception",
     "exception"
