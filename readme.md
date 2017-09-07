@@ -1,2 +1,4 @@
 # MultiException
-_Library that implements the **MultiException** pattern._
+Library that implements the **MultiException** pattern.
+
+Домашнее задание pr-of-it.ru
